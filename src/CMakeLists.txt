@@ -195,7 +195,7 @@ set_property(TARGET WalletUpgrader PROPERTY OUTPUT_NAME "wallet-upgrader")
 
 # Additional make targets, can be used to build a subset of the targets
 # e.g. make pool will build only TurtleCoind and service
-add_custom_target(pool DEPENDS TurtleCoind WalletService)
-add_custom_target(solominer DEPENDS TurtleCoind zedwallet++ miner)
-add_custom_target(cli DEPENDS TurtleCoind zedwallet++)
+add_custom_target(pool DEPENDS UniBitd WalletService)
+add_custom_target(solominer DEPENDS UniBitd zedwallet++ miner)
+add_custom_target(cli DEPENDS UniBitd zedwallet++)
 add_custom_target(zedwallet DEPENDS zedwallet++)
